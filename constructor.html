@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+        class Bank  
+        {  
+          constructor()  
+          {  
+            this.bankname="SBI";  
+          }  
+        }  
+        class Bank2 extends Bank {  
+          constructor(name,branch,balance) {  
+           super();  
+
+            this.name=name; 
+            this.branch=branch;
+            this.balance=balance; 
+          }   
+        }     
+        var details = new Bank2("SUNNY","HYD",34564,);  
+       // document.writeln(details.name+" "+details.branch+" "+details.balance+" "+details.bankname); 
+       document.writeln(`Customer Name is ${details.name}, Bank is located in ${details.branch}, available balance is RS.${details.balance}, Bank name is ${details.bankname}`) 
+        </script>
+    
+</body>
+</html>
